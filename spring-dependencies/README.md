@@ -1,0 +1,4 @@
+# spring boot 框架依赖管理[包括某个依赖项依赖于spring boot的jar包]
+用来管理框架依赖的jar包
+项目的外部依赖尽量通过这个依赖来管理而不是由项目去定义jar包的版本
+此包用于spring boot的升级

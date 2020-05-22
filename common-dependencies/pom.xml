@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.gnoyuy.infrastructure</groupId>
+        <artifactId>base</artifactId>
+        <version>1.0-RELEASE</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <artifactId>common-dependencies</artifactId>
+    <properties>
+        <lombok.version>1.18.0</lombok.version>
+        <fastjson.version>1.2.58</fastjson.version>
+        <gson.version>2.8.4</gson.version>
+        <okhttp.version>3.10.0</okhttp.version>
+        <httpclient.version>4.5.5</httpclient.version>
+        <smtp.version>1.6.3</smtp.version>
+        <micrometer-registry-prometheus.version>1.1.4</micrometer-registry-prometheus.version>
+        <commons-lang3.version>3.7</commons-lang3.version>
+        <junit-jupiter-api.version>5.4.2</junit-jupiter-api.version>
+        <cglib.version>3.1</cglib.version>
+        <hadoop-client.version>2.7.3</hadoop-client.version>
+        <hadoop-yarn-client.version>2.7.3</hadoop-yarn-client.version>
+        <es.version>7.4.2</es.version>
+        <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
+        <druid.version>1.1.10</druid.version>
+        <jieba-analysis.version>1.0.2</jieba-analysis.version>
+        <task.version>1.0.5-RELEASE</task.version>
+        <service-support.version>1.0.1-RELEASE</service-support.version>
+        <apollo-common.version>1.0.2-RELEASE</apollo-common.version>
+        <task.version>1.0.5-RELEASE</task.version>
+        <common.version>1.2-RELEASE</common.version>
+        <redis-support.version>1.1.2-RELEASE</redis-support.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!--json-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+
+            <!--mail client-->
+            <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>smtp</artifactId>
+                <version>${smtp.version}</version>
+            </dependency>
+
+            <!--prometheus-->
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-registry-prometheus</artifactId>
+                <version>${micrometer-registry-prometheus.version}</version>
+            </dependency>
+
+            <!--common lang-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>${cglib.version}</version>
+            </dependency>
+            <!-- http client-->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <!-- hadoop client-->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-client</artifactId>
+                <version>${hadoop-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-yarn-client</artifactId>
+                <version>${hadoop-yarn-client.version}</version>
+            </dependency>
+            <!-- elastic client -->
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-client</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <!-- mysql client-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!--algo dependencies-->
+            <dependency>
+                <groupId>com.huaban</groupId>
+                <artifactId>jieba-analysis</artifactId>
+                <version>${jieba-analysis.version}</version>
+            </dependency>
+
+            <!-- test dependencies-->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit-jupiter-api.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--mlrc dependencies-->
+            <dependency>
+                <groupId>com.xkj.mlrc.business</groupId>
+                <artifactId>task</artifactId>
+                <version>${task.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xkj.mlrc.business</groupId>
+                <artifactId>service-support</artifactId>
+                <version>${service-support.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xkj.mlrc</groupId>
+                <artifactId>common</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xkj.mlrc.business</groupId>
+                <artifactId>apollo-common</artifactId>
+                <version>${apollo-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xkj.mlrc.business</groupId>
+                <artifactId>redis-support</artifactId>
+                <version>${redis-support.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
