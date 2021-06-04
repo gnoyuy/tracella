@@ -17,7 +17,7 @@
         <fastjson.version>1.2.58</fastjson.version>
         <gson.version>2.8.4</gson.version>
         <okhttp.version>3.10.0</okhttp.version>
-        <httpclient.version>4.5.5</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <smtp.version>1.6.3</smtp.version>
         <micrometer-registry-prometheus.version>1.1.4</micrometer-registry-prometheus.version>
         <commons-lang3.version>3.7</commons-lang3.version>
