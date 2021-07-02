@@ -25,7 +25,7 @@
         <cglib.version>3.1</cglib.version>
         <hadoop-client.version>2.7.3</hadoop-client.version>
         <hadoop-yarn-client.version>2.7.3</hadoop-yarn-client.version>
-        <es.version>7.4.2</es.version>
+        <es.version>7.11.2</es.version>
         <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
         <druid.version>1.1.10</druid.version>
         <jieba-analysis.version>1.0.2</jieba-analysis.version>
