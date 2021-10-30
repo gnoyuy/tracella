@@ -45,6 +45,8 @@
                 <directory>src/main/resources</directory>
                 <includes>
                     <include>*.xml</include>
+                    <include>*.yml</include>
+                    <include>*.properties</include>
                 </includes>
             </resource>
         </resources>
@@ -88,7 +90,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <!--spring boot plugin version should same with spring boot version-->
-                    <version>${spring-boot.version}</version>
+                    <version>1.5.13.RELEASE</version>
                     <executions>
                         <execution>
                             <goals>
@@ -103,10 +105,10 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-            </plugin>
+            <!-- <plugin> -->
+                <!-- <groupId>org.apache.maven.plugins</groupId> -->
+                <!-- <artifactId>maven-checkstyle-plugin</artifactId> -->
+            <!-- </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -120,6 +122,13 @@
 
     <reporting>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>

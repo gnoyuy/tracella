@@ -11,13 +11,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 public class AppApplication {
     /**
-     * deny instance outside
-     */
-    private AppApplication() {
-
-    }
-    /**
      * entry.
+     * 
      * @param args args
      */
     public static void main(String[] args) {

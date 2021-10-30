@@ -11,13 +11,8 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @EnableEurekaServer
 public class EurekaServerApplication {
     /**
-     * deny new instance
-     */
-    private EurekaServerApplication() {
-
-    }
-    /**
      * starter.
+     * 
      * @param args args
      */
     public static void main(final String[] args) {

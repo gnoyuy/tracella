@@ -3,6 +3,11 @@
 *.iws
 *.iml
 *.ipr
-/target/
+**/target/
+.vscode
+**/.project
+**/.settings
+**/.classpath
+**/.factorypath
 
 
