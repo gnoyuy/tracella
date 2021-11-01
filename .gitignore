@@ -1,9 +1,13 @@
-### IntelliJ IDEA ###
+# IntelliJ IDEA #
 .idea
 *.iws
 *.iml
 *.ipr
+
+# java compile tmp #
 **/target/
+
+# vscode #
 .vscode
 **/.project
 **/.settings
